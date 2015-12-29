@@ -1,0 +1,15 @@
+C:\Users\Игорь\Desktop\Manage LAN\Manage LAN\bin\Debug\Manage LAN.exe.config
+C:\Users\Игорь\Desktop\Manage LAN\Manage LAN\bin\Debug\Manage LAN.exe
+C:\Users\Игорь\Desktop\Manage LAN\Manage LAN\bin\Debug\Manage LAN.pdb
+C:\Users\Игорь\Desktop\Manage LAN\Manage LAN\obj\Debug\Manage_LAN.Form1.resources
+C:\Users\Игорь\Desktop\Manage LAN\Manage LAN\obj\Debug\Manage_LAN.Properties.Resources.resources
+C:\Users\Игорь\Desktop\Manage LAN\Manage LAN\obj\Debug\Manage LAN.csproj.GenerateResource.Cache
+C:\Users\Игорь\Desktop\Manage LAN\Manage LAN\obj\Debug\Manage LAN.exe
+C:\Users\Игорь\Desktop\Manage LAN\Manage LAN\obj\Debug\Manage LAN.pdb
+C:\Users\Игорь\Desktop\Manage LAN\Manage LAN\bin\Debug\MetroFramework.dll
+C:\Users\Игорь\Desktop\Manage LAN\Manage LAN\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Игорь\Desktop\Manage LAN\Manage LAN\WorkingApp\Manage LAN.exe.config
+C:\Users\Игорь\Desktop\Manage LAN\Manage LAN\WorkingApp\Manage LAN.exe
+C:\Users\Игорь\Desktop\Manage LAN\Manage LAN\WorkingApp\Manage LAN.pdb
+C:\Users\Игорь\Desktop\Manage LAN\Manage LAN\obj\Debug\Manage LAN.csprojResolveAssemblyReference.cache
+C:\Users\Игорь\Desktop\Manage LAN\Manage LAN\obj\Debug\Manage_LAN.Form2.resources
