@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
+using System.Threading;
 using Manage_LAN.Library_Class;
 using MetroFramework.Forms;
 
@@ -15,36 +17,47 @@ namespace Manage_LAN
             InitializeComponent();
         }
 
+        public static string RoomNumber;
+        public string TopPath;
+
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            String roomNumber;
             if (metroRadioButton1.Checked)
             {
-                roomNumber = "007";
+                RoomNumber = "mac 007";
             }
             else if (metroRadioButton2.Checked)
             {
-                roomNumber = "009";
+                RoomNumber = "mac 009";
             }
             else if (metroRadioButton3.Checked)
             {
-                roomNumber = "203";
+                RoomNumber = "mac 203";
             }
             else
             {
                 return;
             }
-            FillListbox(roomNumber);
+            FillListboxMac(RoomNumber);
         }
 
-        private void FillListbox(string roomNumber)
+        private void FillListboxMac(string roomNumber)
         {
             listBox1.Items.Clear();
-            string path = $"{Directory.GetCurrentDirectory()}\\data\\{roomNumber}.txt";
-            string[] lines = File.ReadAllLines(path);
-            foreach (var line in lines)
+            WakeOnLan.ReadFromFile();
+            foreach (var line in WakeOnLan.Lines)
             {
                 listBox1.Items.Add(line);
+            }
+        }
+
+        private void FillListBoxIp(string roomNumber)
+        {
+            listBox2.Items.Clear();
+            WakeOnLan.ReadFromFile();
+            foreach (var line in WakeOnLan.Lines)
+            {
+                listBox2.Items.Add(line);
             }
         }
 
@@ -65,6 +78,41 @@ namespace Manage_LAN
             }))
             {
             }
+        }
+
+        private void metroButton3_Click(object sender, EventArgs e)
+        {   
+            if (metroRadioButton4.Checked)
+            {
+                RoomNumber = "IP 007";
+            }
+            else if (metroRadioButton5.Checked)
+            {
+                RoomNumber = "IP 009";
+            }
+            else if (metroRadioButton6.Checked)
+            {
+                RoomNumber = "IP 203";
+            }
+            else
+            {
+                return;
+            }
+            FillListBoxIp(RoomNumber);
+        }
+
+        private void metroButton4_Click(object sender, EventArgs e)
+        {
+            TopPath = metroTextBox1.Text;
+            DeletePath.DelPath(TopPath);
+            metroLabel5.ForeColor = Color.Red;
+            metroLabel5.Text = DeletePath.ErrDic.Item2;
+            if (DeletePath.ErrDic.Item1 == 0)
+            {
+                metroLabel5.ForeColor = Color.Green;
+                metroLabel5.Text = DeletePath.ErrDic.Item2;
+            }
+            Thread.Sleep(2000);
         }
     }
 }

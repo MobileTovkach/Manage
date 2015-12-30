@@ -47,16 +47,29 @@ namespace Manage_LAN
             this.metroRadioButton2 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButton1 = new MetroFramework.Controls.MetroRadioButton();
             this.UpdateForm = new System.Windows.Forms.Timer(this.components);
+            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.metroButton3 = new MetroFramework.Controls.MetroButton();
+            this.metroButton4 = new MetroFramework.Controls.MetroButton();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.metroRadioButton4 = new MetroFramework.Controls.MetroRadioButton();
+            this.metroRadioButton5 = new MetroFramework.Controls.MetroRadioButton();
+            this.metroRadioButton6 = new MetroFramework.Controls.MetroRadioButton();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
+            this.metroTabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroTabControl1
             // 
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
+            this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Location = new System.Drawing.Point(2, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(646, 331);
             this.metroTabControl1.TabIndex = 0;
             // 
@@ -82,7 +95,7 @@ namespace Manage_LAN
             // 
             this.metroButton2.Location = new System.Drawing.Point(473, 36);
             this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(99, 23);
+            this.metroButton2.Size = new System.Drawing.Size(99, 22);
             this.metroButton2.TabIndex = 11;
             this.metroButton2.Text = "Wake on LAN";
             this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
@@ -91,7 +104,7 @@ namespace Manage_LAN
             // 
             this.metroButton1.Location = new System.Drawing.Point(473, 6);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(99, 23);
+            this.metroButton1.Size = new System.Drawing.Size(99, 24);
             this.metroButton1.TabIndex = 10;
             this.metroButton1.Text = "Get list of MAC";
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
@@ -158,6 +171,118 @@ namespace Manage_LAN
             this.UpdateForm.Enabled = true;
             this.UpdateForm.Interval = 300;
             // 
+            // metroTabPage2
+            // 
+            this.metroTabPage2.Controls.Add(this.metroLabel5);
+            this.metroTabPage2.Controls.Add(this.metroTextBox1);
+            this.metroTabPage2.Controls.Add(this.metroLabel4);
+            this.metroTabPage2.Controls.Add(this.metroLabel3);
+            this.metroTabPage2.Controls.Add(this.metroRadioButton6);
+            this.metroTabPage2.Controls.Add(this.metroRadioButton5);
+            this.metroTabPage2.Controls.Add(this.metroRadioButton4);
+            this.metroTabPage2.Controls.Add(this.listBox2);
+            this.metroTabPage2.Controls.Add(this.metroButton4);
+            this.metroTabPage2.Controls.Add(this.metroButton3);
+            this.metroTabPage2.HorizontalScrollbarBarColor = true;
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage2.Name = "metroTabPage2";
+            this.metroTabPage2.Size = new System.Drawing.Size(638, 292);
+            this.metroTabPage2.TabIndex = 1;
+            this.metroTabPage2.Text = "Delete Path";
+            this.metroTabPage2.VerticalScrollbarBarColor = true;
+            // 
+            // metroButton3
+            // 
+            this.metroButton3.Location = new System.Drawing.Point(477, 15);
+            this.metroButton3.Name = "metroButton3";
+            this.metroButton3.Size = new System.Drawing.Size(98, 28);
+            this.metroButton3.TabIndex = 2;
+            this.metroButton3.Text = "Get list of IP";
+            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
+            // 
+            // metroButton4
+            // 
+            this.metroButton4.Location = new System.Drawing.Point(477, 49);
+            this.metroButton4.Name = "metroButton4";
+            this.metroButton4.Size = new System.Drawing.Size(98, 29);
+            this.metroButton4.TabIndex = 3;
+            this.metroButton4.Text = "Delete directory";
+            this.metroButton4.Click += new System.EventHandler(this.metroButton4_Click);
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(3, 37);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(250, 238);
+            this.listBox2.TabIndex = 4;
+            // 
+            // metroRadioButton4
+            // 
+            this.metroRadioButton4.AutoSize = true;
+            this.metroRadioButton4.Location = new System.Drawing.Point(273, 42);
+            this.metroRadioButton4.Name = "metroRadioButton4";
+            this.metroRadioButton4.Size = new System.Drawing.Size(41, 15);
+            this.metroRadioButton4.TabIndex = 5;
+            this.metroRadioButton4.TabStop = true;
+            this.metroRadioButton4.Text = "007";
+            this.metroRadioButton4.UseVisualStyleBackColor = true;
+            // 
+            // metroRadioButton5
+            // 
+            this.metroRadioButton5.AutoSize = true;
+            this.metroRadioButton5.Location = new System.Drawing.Point(273, 63);
+            this.metroRadioButton5.Name = "metroRadioButton5";
+            this.metroRadioButton5.Size = new System.Drawing.Size(41, 15);
+            this.metroRadioButton5.TabIndex = 6;
+            this.metroRadioButton5.TabStop = true;
+            this.metroRadioButton5.Text = "009";
+            this.metroRadioButton5.UseVisualStyleBackColor = true;
+            // 
+            // metroRadioButton6
+            // 
+            this.metroRadioButton6.AutoSize = true;
+            this.metroRadioButton6.Location = new System.Drawing.Point(273, 84);
+            this.metroRadioButton6.Name = "metroRadioButton6";
+            this.metroRadioButton6.Size = new System.Drawing.Size(41, 15);
+            this.metroRadioButton6.TabIndex = 7;
+            this.metroRadioButton6.TabStop = true;
+            this.metroRadioButton6.Text = "203";
+            this.metroRadioButton6.UseVisualStyleBackColor = true;
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(3, 15);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(94, 19);
+            this.metroLabel3.TabIndex = 9;
+            this.metroLabel3.Text = "List IP address:";
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.Location = new System.Drawing.Point(273, 15);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(117, 19);
+            this.metroLabel4.TabIndex = 10;
+            this.metroLabel4.Text = "Number audience:";
+            // 
+            // metroTextBox1
+            // 
+            this.metroTextBox1.Location = new System.Drawing.Point(272, 133);
+            this.metroTextBox1.Name = "metroTextBox1";
+            this.metroTextBox1.Size = new System.Drawing.Size(350, 22);
+            this.metroTextBox1.TabIndex = 11;
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.Location = new System.Drawing.Point(477, 273);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(0, 0);
+            this.metroLabel5.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,6 +295,8 @@ namespace Manage_LAN
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
+            this.metroTabPage2.ResumeLayout(false);
+            this.metroTabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -187,6 +314,17 @@ namespace Manage_LAN
         private MetroRadioButton metroRadioButton1;
         private MetroButton metroButton2;
         private Timer UpdateForm;
+        private MetroTabPage metroTabPage2;
+        private MetroLabel metroLabel4;
+        private MetroLabel metroLabel3;
+        private MetroRadioButton metroRadioButton6;
+        private MetroRadioButton metroRadioButton5;
+        private MetroRadioButton metroRadioButton4;
+        private ListBox listBox2;
+        private MetroButton metroButton4;
+        private MetroButton metroButton3;
+        private MetroTextBox metroTextBox1;
+        private MetroLabel metroLabel5;
     }
 }
 

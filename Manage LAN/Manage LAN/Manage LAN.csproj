@@ -64,6 +64,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Library Class\DeletePath.cs" />
     <Compile Include="Library Class\EnumerableExtensions.cs" />
     <Compile Include="Library Class\WakeOnLan.cs" />
     <Compile Include="Program.cs" />
@@ -100,9 +101,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="WorkingApp\data\007.txt" />
-    <Content Include="WorkingApp\data\009.txt" />
-    <Content Include="WorkingApp\data\203.txt" />
+    <Content Include="WorkingApp\data\IP 007.txt" />
+    <Content Include="WorkingApp\data\IP 009.txt" />
+    <Content Include="WorkingApp\data\IP 203.txt" />
+    <Content Include="WorkingApp\data\mac 007.txt" />
+    <Content Include="WorkingApp\data\mac 009.txt" />
+    <Content Include="WorkingApp\data\mac 203.txt" />
     <Content Include="MetroFramework.txt" />
     <Content Include="WorkingApp\Manage LAN.exe" />
     <Content Include="WorkingApp\Manage LAN.pdb" />
